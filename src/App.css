@@ -1,0 +1,276 @@
+.App {
+  text-align: center;
+  
+  background-color: mediumorchid;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.updateprofile{
+  width:500px;
+  float:right;
+  text-align:left;
+  border-radius: 20%;
+}
+
+.updateprofile h3{
+  color: whitesmoke;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.bikecardcontainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.button {
+color: grey !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 20px;
+border: 4px solid grey !important;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+
+.button:hover{
+  color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+
+.bikeshopbutton{
+color: grey !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #adad85 !important;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+
+.bikeshopbutton:hover{
+    color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+.profilebikecardcontainer{
+  display: -moz-grid;
+  max-width: 75%;
+  float: right;
+}
+
+.profilebikecardcontainer:hover{
+  position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.profilecard{
+  display: block;
+  box-align: middle;
+  padding: 16px;
+  background: lightgray;
+  border: black;
+  border-radius: 50px;
+  max-width: 35%;
+  max-height: 50%;
+}
+.profileimage{
+  float: center;
+  width: 25%;
+  padding: 0 10px;
+  border-radius: 50px;
+  border-color: #494949 !important;
+}
+
+
+/* .bikecolumn{
+  float: center;
+  width: 25%;
+  padding: 0 10px;
+
+} */
+
+.cart{
+  float: right;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bikecard{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 6px;
+  text-align: center;
+  background-color: #e0e0eb;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  perspective: 1300px;
+}
+
+.biketips{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 6px;
+  text-align: center;
+  background-color: #e0e0eb;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  perspective: 1300px;
+}
+
+.bikecard div{
+  transform-style: preserve-3d;
+}
+.bikecard div.animate{
+  transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	animation: fallPerspective .8s ease-in-out forwards;
+}
+
+.indbikeimage{
+  float: center;
+  width: 25%;
+  padding: 0 10px;
+  border-radius: 50px;
+  border-color: #494949 !important;
+}
+
+.indbikeimage:hover{
+  position: sticky;
+    top:-25px;
+    left:-40px;
+    width:450px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.bikecardcontainer:hover{
+  position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+
+
+.link{
+  
+  color: #1320d3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.form{
+   max-width: 300px;
+  padding: 25px;
+  background-color: white;
+}
+
+.form input[name=brand], .form input[name=price], .form input[name=size], .form input[name=img], .form input[name=name],.form input[name=email], .form input[name=location] {
+  width: 100%;
+  padding: 10px;
+  padding-right: -30px;
+  margin: 5px 0 5px 0;
+  border: grey;
+  background: #f1f1f1;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.bikeimage{
+   float: center;
+  width: 25%;
+  padding: 0 10px;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  width: 200px;
+  height: 200px;
+   
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.sidebar{
+  float: right;
+  width: 25%;
+  padding: 0 10px;
+  
+}
+.card-container {
+    display: grid;
+    float: center;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.sidebarimg{
+  width: 400px;
+  height: 400px;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.row {margin: 0 -5px;}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fallPerspective {
+	100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
